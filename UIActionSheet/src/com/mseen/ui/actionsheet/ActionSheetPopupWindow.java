@@ -32,7 +32,7 @@ public class ActionSheetPopupWindow extends PopupWindow {
 		btn_pick_photo.setOnClickListener(itemsOnClick);
 		btn_take_photo.setOnClickListener(itemsOnClick);
 		this.setContentView(mMenuView);
-		this.setWidth(LayoutParams.FILL_PARENT);
+		this.setWidth(LayoutParams.MATCH_PARENT);
 		this.setHeight(LayoutParams.WRAP_CONTENT);
 		this.setFocusable(true);
 		this.setAnimationStyle(R.style.AnimBottom);

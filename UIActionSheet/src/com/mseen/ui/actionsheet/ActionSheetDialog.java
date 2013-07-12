@@ -5,7 +5,6 @@ import java.util.List;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
-import android.database.DataSetObserver;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,11 +12,8 @@ import android.view.ViewGroup.LayoutParams;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
-
-import com.mseen.ui.actionsheet.R;
 
 public class ActionSheetDialog extends Dialog {
 
@@ -125,5 +121,7 @@ public class ActionSheetDialog extends Dialog {
 		selectsheet_dialog_content_LV.setVisibility(View.VISIBLE);
 		selectsheet_dialog_content_LV.setAdapter(new ArrayAdapter<String>(mContext,
 				R.layout.select_sheet_list_item_layout, R.id.select_sheet_list_item_btn, values));
+		
+		selectsheet_dialog_content_LV.setOnItemClickListener( itemClickListener );
 	}
 }
