@@ -121,7 +121,7 @@ public class ActionSheetDialog extends Dialog {
 		selectsheet_dialog_content_LV.setVisibility(View.VISIBLE);
 		selectsheet_dialog_content_LV.setAdapter(new ArrayAdapter<String>(mContext,
 				R.layout.select_sheet_list_item_layout, R.id.select_sheet_list_item_btn, values));
-		
-		selectsheet_dialog_content_LV.setOnItemClickListener( itemClickListener );
+
+		selectsheet_dialog_content_LV.setOnItemClickListener(itemClickListener);
 	}
 }

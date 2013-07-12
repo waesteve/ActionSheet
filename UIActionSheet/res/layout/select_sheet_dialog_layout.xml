@@ -47,6 +47,7 @@
 				android:dividerHeight="3dp"
 				android:drawSelectorOnTop="false"
 				android:fadingEdge="none"
+				android:listSelector="@android:color/transparent"
 				android:persistentDrawingCache="animation|scrolling"
 				android:scrollbars="none"
 				android:stretchMode="columnWidth"
