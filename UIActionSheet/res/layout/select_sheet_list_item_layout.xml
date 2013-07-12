@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Button xmlns:android="http://schemas.android.com/apk/res/android"
 	android:id="@+id/select_sheet_list_item_btn"
-	android:layout_width="fill_parent"
+	android:layout_width="30px"
 	android:layout_height="wrap_content"
+	android:background="@drawable/selectsheet_button"
+	android:clickable="false"
 	android:textStyle="bold" />
-<!-- android:background="@drawable/selectsheet_button" -->
