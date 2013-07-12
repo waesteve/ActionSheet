@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_gravity="bottom"
+	android:gravity="center_horizontal"
+	android:orientation="vertical" >
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/selectsheet_background"
+		android:gravity="center_horizontal"
+		android:orientation="vertical" >
+
+		<TextView
+			android:id="@+id/selectsheet_popupwindow_title_TV"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginLeft="20.0dip"
+			android:layout_marginRight="20.0dip"
+			android:gravity="center"
+			android:text="拍照"
+			android:textColor="@android:color/white"
+			android:textSize="16.0sp"
+			android:textStyle="bold" />
+
+		<LinearLayout
+			android:id="@+id/selectsheet_popupwindow_content_viewgroup"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center_horizontal"
+			android:orientation="vertical" >
+
+			<Button
+				android:id="@+id/btn_take_photo"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="20.0dip"
+				android:layout_marginRight="20.0dip"
+				android:layout_marginTop="10.0dip"
+				android:background="@drawable/selectsheet_button"
+				android:text="拍照"
+				android:textStyle="bold" />
+
+			<Button
+				android:id="@+id/btn_pick_photo"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="20.0dip"
+				android:layout_marginRight="20.0dip"
+				android:layout_marginTop="5.0dip"
+				android:background="@drawable/selectsheet_button"
+				android:text="从相册选择"
+				android:textStyle="bold" />
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/selectsheet_popupwindow_menu_viewgroup"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center_horizontal"
+			android:orientation="vertical" >
+
+			<Button
+				android:id="@+id/selectsheet_popupwindow_ok_btn"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="20.0dip"
+				android:layout_marginRight="20.0dip"
+				android:layout_marginTop="15.0dip"
+				android:background="@drawable/selectsheet_cancel"
+				android:text="确定"
+				android:textColor="#ffffffff"
+				android:textStyle="bold" />
+
+			<Button
+				android:id="@+id/selectsheet_popupwindow_cancel_btn"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="8.0dip"
+				android:layout_marginLeft="20.0dip"
+				android:layout_marginRight="20.0dip"
+				android:background="@drawable/selectsheet_cancel"
+				android:text="取消"
+				android:textColor="#ffffffff"
+				android:textStyle="bold" />
+		</LinearLayout>
+	</LinearLayout>
+
+</RelativeLayout>

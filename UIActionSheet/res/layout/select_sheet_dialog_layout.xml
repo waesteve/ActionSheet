@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:layout_gravity="bottom"
+	android:gravity="center_horizontal"
+	android:orientation="vertical" >
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/selectsheet_background"
+		android:gravity="center_horizontal"
+		android:orientation="vertical" >
+
+		<TextView
+			android:id="@+id/selectsheet_dialog_title_TV"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginLeft="20.0dip"
+			android:layout_marginRight="20.0dip"
+			android:focusable="false"
+			android:gravity="center"
+			android:textColor="@android:color/white"
+			android:textSize="16.0sp"
+			android:textStyle="bold"
+			android:visibility="gone" />
+
+		<LinearLayout
+			android:id="@+id/selectsheet_dialog_content_viewgroup"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="15dp"
+			android:gravity="center_horizontal"
+			android:orientation="vertical" >
+
+			<ListView
+				android:id="@+id/selectsheet_dialog_content_LV"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="20.0dip"
+				android:layout_marginRight="20.0dip"
+				android:alwaysDrawnWithCache="true"
+				android:cacheColorHint="#00000000"
+				android:divider="#00000000"
+				android:dividerHeight="3dp"
+				android:drawSelectorOnTop="false"
+				android:fadingEdge="none"
+				android:persistentDrawingCache="animation|scrolling"
+				android:scrollbars="none"
+				android:stretchMode="columnWidth"
+				android:visibility="visible" >
+			</ListView>
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/selectsheet_dialog_menu_viewgroup"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="15.0dip"
+			android:gravity="center_horizontal"
+			android:orientation="vertical" >
+
+			<Button
+				android:id="@+id/selectsheet_dialog_ok_btn"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="20.0dip"
+				android:layout_marginRight="20.0dip"
+				android:background="@drawable/selectsheet_cancel"
+				android:text="@android:string/ok"
+				android:textColor="#ffffffff"
+				android:textStyle="bold"
+				android:visibility="gone" />
+
+			<Button
+				android:id="@+id/selectsheet_dialog_cancel_btn"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="10.0dip"
+				android:layout_marginLeft="20.0dip"
+				android:layout_marginRight="20.0dip"
+				android:background="@drawable/selectsheet_cancel"
+				android:text="@android:string/no"
+				android:textColor="#ffffffff"
+				android:textStyle="bold"
+				android:visibility="gone" />
+		</LinearLayout>
+	</LinearLayout>
+
+</RelativeLayout>
